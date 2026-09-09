@@ -1,0 +1,318 @@
+/* ===== ESTILOS GLOBALES - EL SALOON WESTERN FAST FOOD ===== */
+:root {
+  --wood-dark: #190c05;
+  --wood-medium: #32180b;
+  --wood-light: #4a2712;
+  --wood-plank-1: #241208;
+  --wood-plank-2: #2e170a;
+  
+  --parchment-light: #fffdf7;
+  --parchment-bg: #f8eed5;
+  --parchment-dark: #e8d5ae;
+  --parchment-border: #c4a976;
+  
+  --gold-accent: #d97706;
+  --gold-light: #fbbf24;
+  --gold-border: #f59e0b;
+  
+  --fire-rust: #b91c1c;
+  --fire-amber: #ea580c;
+  
+  --ink-black: #1c1917;
+  --ink-muted: #57534e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--ink-black);
+  background-color: var(--wood-dark);
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.25) 0px,
+      rgba(0, 0, 0, 0.25) 4px,
+      transparent 4px,
+      transparent 180px
+    ),
+    linear-gradient(
+      180deg,
+      rgba(25, 12, 5, 0.94),
+      rgba(40, 18, 8, 0.97)
+    ),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23542f13' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Tipografías Temáticas */
+.font-western {
+  font-family: 'Rye', cursive, serif !important;
+  letter-spacing: 1px;
+}
+
+.font-vintage {
+  font-family: 'Alfa Slab One', cursive !important;
+  letter-spacing: 0.5px;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800;
+}
+
+/* Fondo tipo Tablas de Madera para Contenedores */
+.wood-board-bg {
+  background: 
+    linear-gradient(180deg, rgba(30, 15, 7, 0.95), rgba(46, 23, 10, 0.97)),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0px,
+      rgba(0, 0, 0, 0.4) 2px,
+      transparent 2px,
+      transparent 60px
+    );
+  border: 3px solid #6b3e1f;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.8), 0 8px 20px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+/* Banner de Categoría con Estilo Viejo Oeste */
+.hero-category-banner {
+  position: relative;
+  min-height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #854823;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero-category-banner .banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg, 
+    rgba(18, 9, 3, 0.6) 0%, 
+    rgba(25, 12, 5, 0.88) 75%,
+    rgba(18, 9, 3, 0.98) 100%
+  );
+  z-index: 1;
+}
+
+.hero-category-banner .banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+}
+
+.western-title-frame {
+  display: inline-block;
+  background: rgba(30, 15, 7, 0.85);
+  border: 2px solid var(--gold-border);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.3), inset 0 0 10px rgba(0,0,0,0.7);
+  padding: 0.6rem 2rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.western-title-frame::before,
+.western-title-frame::after {
+  content: '★';
+  color: var(--gold-light);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.western-title-frame::before { left: 10px; }
+.western-title-frame::after { right: 10px; }
+
+/* Tarjetas de Producto estilo Pergamino / Madera */
+.saloon-product-card {
+  background: var(--parchment-bg) !important;
+  border: 3px solid var(--parchment-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(180, 140, 80, 0.2);
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.saloon-product-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85), 0 0 15px rgba(217, 119, 6, 0.4);
+  border-color: var(--gold-border);
+}
+
+/* Foto con borde rústico */
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--parchment-border);
+}
+
+.product-img-wrapper .q-img {
+  transition: transform 0.6s ease;
+}
+
+.saloon-product-card:hover .product-img-wrapper .q-img {
+  transform: scale(1.06);
+}
+
+/* Tarjeta Destacada: RECOMENDACIÓN DEL CHEF */
+.chef-recommended-card {
+  background: linear-gradient(175deg, #fff9e6 0%, #f7e8bc 100%) !important;
+  border: 4px solid var(--gold-border) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 158, 11, 0.5) !important;
+  transform: scale(1.02);
+}
+
+.chef-recommended-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #d97706, #fbbf24, #d97706);
+  z-index: 5;
+}
+
+.chef-badge-ribbon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  background: linear-gradient(135deg, #991b1b, #dc2626);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 1px solid #fef08a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Precio en Pesos Colombianos */
+.price-tag-western {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.45rem;
+  color: #991b1b;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.price-tag-western .currency-symbol {
+  font-size: 1rem;
+  color: #78350f;
+}
+
+.price-tag-western .cop-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #78350f;
+  background: rgba(217, 119, 6, 0.18);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* Badges / Chips de Etiquetas */
+.tag-badge-western {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.tag-badge-hot {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #fca5a5;
+}
+
+.tag-badge-popular {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+}
+
+.tag-badge-new {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #86efac;
+}
+
+.tag-badge-veggie {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #6ee7b7;
+}
+
+.tag-badge-promo {
+  background: #fdf2f8;
+  color: #9d174d;
+  border-color: #f472b6;
+}
+
+/* Botón de Ordenar / Pedir estilo Saloon */
+.btn-saloon-order {
+  background: linear-gradient(180deg, #b45309 0%, #78350f 100%) !important;
+  color: #fffdf5 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  border: 1px solid #f59e0b !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.25) !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn-saloon-order:hover {
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5), 0 0 10px rgba(245, 158, 11, 0.4) !important;
+}
+
+/* Contenedores de Madera Rústica */
+.wanted-frame {
+  background: #fbf3db;
+  border: 4px solid #4a2712;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 30px rgba(110, 60, 20, 0.3), 0 8px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.wanted-frame::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed #8c532b;
+  pointer-events: none;
+}
