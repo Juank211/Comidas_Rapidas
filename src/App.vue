@@ -112,22 +112,6 @@
       </div>
     </q-page-container>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-btn 
-        fab 
-        icon="chat" 
-        color="positive" 
-        class="shadow-10 pulse-btn"
-        href="https://wa.me/573105557890?text=Hola%20El%20Saloon,%20quiero%20hacer%20un%20pedido"
-        target="_blank"
-      >
-        <q-tooltip class="bg-brown-10 font-cinzel text-amber-4">
-          ¡Haz tu pedido express al WhatsApp!
-        </q-tooltip>
-      </q-btn>
-    </q-page-sticky>
-
     <!-- PIE DE PÁGINA RÚSTICO -->
     <q-footer elevated class="western-footer text-grey-4">
       <div class="q-pa-lg">

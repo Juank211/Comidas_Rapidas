@@ -137,24 +137,17 @@ body {
 .western-title-frame::before { left: 10px; }
 .western-title-frame::after { right: 10px; }
 
-/* Tarjetas de Producto estilo Pergamino / Madera */
+/* Tarjetas de Producto estilo Pergamino / Madera (Estáticas) */
 .saloon-product-card {
   background: var(--parchment-bg) !important;
   border: 3px solid var(--parchment-border);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(180, 140, 80, 0.2);
-  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
   overflow: hidden;
-}
-
-.saloon-product-card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85), 0 0 15px rgba(217, 119, 6, 0.4);
-  border-color: var(--gold-border);
 }
 
 /* Foto con borde rústico */
@@ -165,19 +158,14 @@ body {
 }
 
 .product-img-wrapper .q-img {
-  transition: transform 0.6s ease;
-}
-
-.saloon-product-card:hover .product-img-wrapper .q-img {
-  transform: scale(1.06);
+  width: 100%;
 }
 
 /* Tarjeta Destacada: RECOMENDACIÓN DEL CHEF */
 .chef-recommended-card {
   background: linear-gradient(175deg, #fff9e6 0%, #f7e8bc 100%) !important;
   border: 4px solid var(--gold-border) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 158, 11, 0.5) !important;
-  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
 }
 
 .chef-recommended-card::before {
@@ -316,3 +304,22 @@ body {
   border: 1px dashed #8c532b;
   pointer-events: none;
 }
+
+/* Insignia / Tag Rústico para Cargos de Empleados */
+.employee-role-badge {
+  background: linear-gradient(180deg, #3d1c0a 0%, #200a02 100%);
+  color: #fef3c7;
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 2px solid #d97706;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4), inset 0 0 6px rgba(245, 158, 11, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+

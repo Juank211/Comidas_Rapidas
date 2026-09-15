@@ -123,9 +123,12 @@
             />
           </div>
           <q-card-section class="q-pa-md">
-            <span class="tag-badge-western tag-badge-popular q-mb-xs">
-              {{ miembro.rol }}
-            </span>
+            <div class="q-mb-xs">
+              <span class="employee-role-badge">
+                <q-icon name="star" color="amber-4" size="14px" />
+                {{ miembro.rol }}
+              </span>
+            </div>
             <h3 class="text-h5 font-western text-brown-10 q-my-xs text-weight-bold">
               {{ miembro.nombre }}
             </h3>

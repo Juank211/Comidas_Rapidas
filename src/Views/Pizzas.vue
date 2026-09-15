@@ -52,15 +52,8 @@
           <!-- CONTENIDO DE LA CARD -->
           <q-card-section class="q-pa-md col column justify-between">
             <div>
-              <div class="row items-center justify-between q-mb-xs">
-                <span 
-                  v-if="producto.etiqueta" 
-                  class="tag-badge-western"
-                  :class="producto.claseEtiqueta"
-                >
-                  {{ producto.etiqueta }}
-                </span>
-                <span v-if="producto.esRecomendado" class="text-caption font-cinzel text-deep-orange-9 text-weight-bolder">
+              <div v-if="producto.esRecomendado" class="row items-center justify-end q-mb-xs">
+                <span class="text-caption font-cinzel text-deep-orange-9 text-weight-bolder">
                   ★ HORNO DE PIEDRA MASTER
                 </span>
               </div>
